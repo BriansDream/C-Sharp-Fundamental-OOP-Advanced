@@ -1,0 +1,16 @@
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\bin\Debug\net5.0\Fundamental.exe
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\bin\Debug\net5.0\Fundamental.deps.json
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\bin\Debug\net5.0\Fundamental.runtimeconfig.json
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\bin\Debug\net5.0\Fundamental.runtimeconfig.dev.json
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\bin\Debug\net5.0\Fundamental.dll
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\bin\Debug\net5.0\ref\Fundamental.dll
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\bin\Debug\net5.0\Fundamental.pdb
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\obj\Debug\net5.0\Fundamental.csproj.AssemblyReference.cache
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\obj\Debug\net5.0\Fundamental.GeneratedMSBuildEditorConfig.editorconfig
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\obj\Debug\net5.0\Fundamental.AssemblyInfoInputs.cache
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\obj\Debug\net5.0\Fundamental.AssemblyInfo.cs
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\obj\Debug\net5.0\Fundamental.csproj.CoreCompileInputs.cache
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\obj\Debug\net5.0\Fundamental.dll
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\obj\Debug\net5.0\ref\Fundamental.dll
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\obj\Debug\net5.0\Fundamental.pdb
+E:\C-Sharp-Basic-and-OOP\Fundamental C#\Fundamental\obj\Debug\net5.0\Fundamental.genruntimeconfig.cache

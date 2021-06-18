@@ -1,0 +1,94 @@
+// Konversi tipe data (Secara implisit tidak dapat mengkonversi tipe data yang ukurannya lebih besar ke yang kecil)
+
+    int i = 230;
+    byte j = i;
+    // Jika ingin mengkonversi dari int ke byte dan tidak masalah dengan kemungkinan data yang hilang / lose, dapat mengubahnya secara eksplisit 
+    int i = 255
+    // Memberi tau kompiler bahwa kita akan mengubahnya ke byte
+    byte j = (byte)i
+
+
+// TIPE DATA PRIMITIF
+Tipe data dasar yang disediakan bahasa pemograman atau biasa disebut predefined value 
+    - Char, boolean, int
+
+// TIPE DATA NON PRIMITIF 
+Tipe data bentukan yang terdiri dari dua atau lebih tipe data Primitif
+
+Tipe data Non Primitif 
+    - String, array, Enum, Struct
+
+// String
+ merupakan tipe data bentukan dari tipe data karakter
+// Array
+ merupakan kumpulan dari tipe data sejenis
+// Enum 
+merupakan kumpulan dari konstanta dengan tipe data sejenis 
+// Struct
+ merupakan kumpulan dari variable, konstanta dan fungsi dari berbagai macam tipe data 
+
+// Tipe data non primitif 1 lagi adalah Class (Pada topik OOP)
+
+=====================================================================
+
+// String formatting
+    Untuk menggabungkan 2 buah string 
+    {0} adalah placeholder
+    var x = string.Format("{0", firstVariable};)
+
+Pada tipe data string terdapat escape character yang diawali dengan karakter backslash (\)
+
+// ARRAY 
+    cara mendeklarasikan 
+    int[data] = new int[3];
+    var fruits = new string[3]{"Apple","Orang","etc"};
+    string Mahasiswa = {"Andesta","Andika","Adi"};
+
+    Memberi nilai pada array
+    data[0] = 10;
+
+    menggabungkan semua element array string menggunakan JOIN
+    var allFruit = string.JOIN(",", varStringName);
+
+
+// ENUM
+tipe data (deklarasikan dibawah namespace / level namespace)
+jika tidak mengeset Element Enum, maka Element Enum selalu dimulai dari 0.
+
+Jika ingin memulainya dari 1 maka bisa ditambahkan 1 seperti ini
+FirstClass = 1,
+
+Untuk mendeklarasikan variable ber-tipe data enum, dapat mendeklarasikan didalam method Main
+var seat = SeatType.FirstClass; -> membuat variable string dengan value firstclass
+
+Sekarang bisa melihat nilai numerik dari variable yang berisi tipe data ENUM dengan cara mengkonversinya ke tipe data Integer
+
+            var seat = SeatType.FirstClass;
+            int seatNumb = (int)seat;
+
+Bisa mengubah nilai dari ENUM ke string dengan fungsi To String
+seat.ToString();
+
+
+untuk mengubah string menjadi nilai enum, gunakan ENUM PARSE
+var s = "Economy";
+var seatType = (SeatType)Enum.Parse(typeof(SeatType),s);
+Konversi nilainya 
+Console.WriteLine((SeatType)seatType);
+
+// ================================================================
+
+STRUCT 
+Buat struct baru di level namespace dengan nama Person, lalu tambahkan field didalamnya yaitu firstName and LastName
+Buat method dengan nama GetFullname()
+
+Isi Method Get FullName untuk menampilkan gabungan dari firstName dan lastName
+
+Deklarasikan variable Person dengan nama me
+Person me = new Person(); atau var me = new Person();
+
+Untuk mengisi / menginisialisasi variable tersebeut
+me.FirstName = "Andesta";
+
+Untuk memanggil method getFullname;
+me.GetFullname()

@@ -1,0 +1,16 @@
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\bin\Debug\net5.0\classes.exe
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\bin\Debug\net5.0\classes.deps.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\bin\Debug\net5.0\classes.runtimeconfig.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\bin\Debug\net5.0\classes.runtimeconfig.dev.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\bin\Debug\net5.0\classes.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\bin\Debug\net5.0\ref\classes.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\bin\Debug\net5.0\classes.pdb
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\obj\Debug\net5.0\classes.csproj.AssemblyReference.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\obj\Debug\net5.0\classes.GeneratedMSBuildEditorConfig.editorconfig
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\obj\Debug\net5.0\classes.AssemblyInfoInputs.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\obj\Debug\net5.0\classes.AssemblyInfo.cs
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\obj\Debug\net5.0\classes.csproj.CoreCompileInputs.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\obj\Debug\net5.0\classes.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\obj\Debug\net5.0\ref\classes.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\obj\Debug\net5.0\classes.pdb
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\classes\obj\Debug\net5.0\classes.genruntimeconfig.cache

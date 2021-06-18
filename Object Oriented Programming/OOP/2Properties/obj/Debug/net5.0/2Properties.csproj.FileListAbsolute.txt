@@ -1,0 +1,16 @@
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\obj\Debug\net5.0\2Properties.csproj.AssemblyReference.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\obj\Debug\net5.0\2Properties.GeneratedMSBuildEditorConfig.editorconfig
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\obj\Debug\net5.0\2Properties.AssemblyInfoInputs.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\obj\Debug\net5.0\2Properties.AssemblyInfo.cs
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\obj\Debug\net5.0\2Properties.csproj.CoreCompileInputs.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\bin\Debug\net5.0\2Properties.exe
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\bin\Debug\net5.0\2Properties.deps.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\bin\Debug\net5.0\2Properties.runtimeconfig.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\bin\Debug\net5.0\2Properties.runtimeconfig.dev.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\bin\Debug\net5.0\2Properties.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\bin\Debug\net5.0\ref\2Properties.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\bin\Debug\net5.0\2Properties.pdb
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\obj\Debug\net5.0\2Properties.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\obj\Debug\net5.0\ref\2Properties.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\obj\Debug\net5.0\2Properties.pdb
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\2Properties\obj\Debug\net5.0\2Properties.genruntimeconfig.cache

@@ -1,0 +1,51 @@
+Topik Pembahasa OOP
+
+1. Classes
+    - Mendefinisikan Class
+    - Membuat Object dari Class
+
+2. Prinsip OOP
+    - Fungsi keyword static
+    - Cara membuat properties dan constructor
+
+// Buat Class baru dengan nama Person di level namespace
+// Buat field / atrribute dengan nama firstName dengan tipe string
+
+// Buat instance dari class Person dengan cara 
+var p1 = new Person(); atau Person p1 = new Person();
+
+// Menginisialisasikan nilai untuk firstname dan lastname
+p1.firstname = "Andesta"
+
+// Bisa buat instance lainnya dengan cara yang sama 
+var p2 = new Person();
+
+// Method Class (Aksi yang dilakukan agar class dapat bekerja)
+public void sayHi(){} 
+
+Cara memanggil method => person1.sayHi();
+
+// Method yang menerima input dengan tipe class
+// Method overloading ada lebih dari 1 method dengan nama yang sama, namun inputnya untuk masing - masing method berbeda tipe data.
+
+public void sayHi(Person person){
+    Console.WriteLine("Hi, {0}", person.firstName);
+}
+
+Compiler akan membedakan method dari tipe data argumentnya
+
+// =========================================================
+
+Sebuah Class memiliki spesial method yang dinamakan Constructor 
+
+Constructor
+Method khusus yang dijalankan secara otomatis saat Instance sebuah class object pertama kali dibuat.
+
+// Membuat constructor
+public Person() {
+    // Constructor mirip seperti method, bedanya constructor tidak memiliki tipe data untuk output dan namanya harus sama dengan Classnya
+}
+
+Coba ubah field class Person menjadi private
+// Akan error karena field tersebut tidak dapat diakses
+untuk mengatasinya kita bisa menggunakan constructor

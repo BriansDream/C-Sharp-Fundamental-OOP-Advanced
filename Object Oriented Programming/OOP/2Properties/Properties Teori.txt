@@ -1,0 +1,47 @@
+Didalam sebuah class dapat membuat beberapa property
+
+// PROPERTY
+Anggota dalam classes yang menyediakan mekanisme untuk membaca, menulis dan melakukan validasi untuk private field.
+
+JIka ingin mengakses private field firstname and lastname dari object instance, maka dapat membuat property seperti ini
+
+public string FirstName {
+    get { // aksesor
+
+    }
+
+    set { // aksesor
+
+    }
+}
+
+Didalam sebuah property terdapat 2 buah AKSESOR
+1. GET, 2. SET
+
+// GET
+berfungsi untuk membaca nilai dari property
+
+// SET 
+berfungsi untuk memberi nilai dari property 
+
+============================================
+
+Hilangkan AKSESOR SET agar property menjadi READ-ONLY dengan nilai yang tidak dapat diubah.
+
+Jika menghilangkan AKSESOR GET, maka nilai dari field tersebut tidak dapat diakses dari instance object
+
+Gunakan AKSESS MODIFIER agar suatu property tidak dapat diakses dari sebuah instance object dengan menambah private access modifier
+
+
+Memvalidasi nilai yang diberikan oleh user kedalam sebuah property
+buat field baru dengan nama age bertipe INT, 
+Lalu buat property baru dengan nama AGE
+
+Beri nilai ke property age di instance ke 1
+person1.AGE =17;
+
+Validasi saat user memberi nilai ke property age
+  if (value >= 12)
+     age = value;
+    else
+Console.WriteLine("Tidak boleh < 12");
