@@ -1,0 +1,45 @@
+// CONSTRUCTOR 
+
+    // THIS
+    Keyword THIS berfungsi untuk mengakses seluruh member di instance class
+
+    Keyword THIS digunakan untuk membedakan objek dengan nama yang sama .
+    Contoh ketika ingin mengisi field private yang dimiliki sebuah class dengan argument constructor.
+
+    Keyword THIS dapat digunakan juga dimanapun saat ingin mengakses member dari sebuah class.
+
+    Dalam sebuah class, bisa mendeklarasikan lebih dari 1 constructor (sama seperti method overloading, nama sama tetapi tipe data parameternya harus berbeda).
+
+    Juga bisa mendeklarasikan constructor default yang tidak memiliki parameter.
+    Bisa memberikan nilai default untuk masing - masing field didalam kode blok di constructor default ini.
+    this.name = "Guest"; 
+    untuk field age bisa memberikan nilai sembarang yaitu 17
+    this.age = 17;
+
+    Untuk constructor dengan dua parameter, bisa memberikan nilai default untuk field age'nya contohnya sama seperti constructor default tadi yaitu 17.
+
+    Sekarang sudah punya 3 buah constructor, coba buat 3 buah instance dari masing - masing constructor ini 
+
+    // =======
+    Sudah memiliki 3 constructor, dan bisa menyederhanakan kode didalam blok constructor ini dengan menggunakan keyword this.
+
+    Pada constructor default, bisa tambahkan kode seperti ini
+    // Saat Constructor ini dipanggil, akan terlebih dahulu menjalankan kode didalam constructor yang memiliki 2 parameter string dan int yaitu constructor 1
+    :this("Guest",17)
+
+    // Karena inisiaslisasi name and age sudah dijalankan di constructor pertama, maka baris pada name and age pada constructor default dapat dihapus
+
+    // Karena inisiaslisasi field alamat dengan nilai default sudah ada di constructor pertama, maka baris ini juga bisa di hapus
+     // this.alamat = "Guest";
+
+
+     // === 
+
+     Untuk constructor pertama juga bisa tambahkan keyword THIS agar menjalankan constructor kedua sebelum menjalankan kode miliknya.
+
+     Disini constructor 1 akan dipanggil dengan argument constructor kedua ditambah nilai default untuk field alamat yaitu "GUEST"
+     :this(name,age,"GUEST")
+
+     Karena ketiga field ini sudah di inisiaslisasi oleh constructor kedua maka bisa menghapus smua kode didalam constructor pertama 
+
+

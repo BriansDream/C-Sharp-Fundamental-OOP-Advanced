@@ -1,0 +1,16 @@
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\bin\Debug\net5.0\3Constructor.exe
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\bin\Debug\net5.0\3Constructor.deps.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\bin\Debug\net5.0\3Constructor.runtimeconfig.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\bin\Debug\net5.0\3Constructor.runtimeconfig.dev.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\bin\Debug\net5.0\3Constructor.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\bin\Debug\net5.0\ref\3Constructor.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\bin\Debug\net5.0\3Constructor.pdb
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\obj\Debug\net5.0\3Constructor.csproj.AssemblyReference.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\obj\Debug\net5.0\3Constructor.GeneratedMSBuildEditorConfig.editorconfig
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\obj\Debug\net5.0\3Constructor.AssemblyInfoInputs.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\obj\Debug\net5.0\3Constructor.AssemblyInfo.cs
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\obj\Debug\net5.0\3Constructor.csproj.CoreCompileInputs.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\obj\Debug\net5.0\3Constructor.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\obj\Debug\net5.0\ref\3Constructor.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\obj\Debug\net5.0\3Constructor.pdb
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\3Constructor\obj\Debug\net5.0\3Constructor.genruntimeconfig.cache
