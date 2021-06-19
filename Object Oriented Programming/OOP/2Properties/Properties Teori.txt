@@ -45,3 +45,28 @@ Validasi saat user memberi nilai ke property age
      age = value;
     else
 Console.WriteLine("Tidak boleh < 12");
+
+// ======================================================
+Cara terbaik untuk validasi adalah menggunakan EXCEPTION HANDLING
+    - Ubah pada bagian validasi sebelumnya didalam blok else
+    throw new ArgumentOutOfRangeException("", "Age must be..."");
+
+Terlihat Unhandle exception di program kita karena hasil validasi di property age
+
+Untuk menghandle exception yang dihasilkan dari validasi tadi, kita bisa menggunakan blok TRY-CATCH saat membaca nilai dari property age
+
+TRY CATCH pada property
+try
+    {
+if (value > 12)
+    {
+ age = value;
+    }
+    }
+catch (System.Exception ex)
+    {
+Console.WriteLine(ex.Message);
+    }
+
+
+TRY CATCH dibuat pada MAIN Method

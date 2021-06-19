@@ -1,0 +1,16 @@
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\obj\Debug\net5.0\6Abstraction.csproj.AssemblyReference.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\obj\Debug\net5.0\6Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\obj\Debug\net5.0\6Abstraction.AssemblyInfoInputs.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\obj\Debug\net5.0\6Abstraction.AssemblyInfo.cs
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\obj\Debug\net5.0\6Abstraction.csproj.CoreCompileInputs.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\bin\Debug\net5.0\6Abstraction.exe
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\bin\Debug\net5.0\6Abstraction.deps.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\bin\Debug\net5.0\6Abstraction.runtimeconfig.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\bin\Debug\net5.0\6Abstraction.runtimeconfig.dev.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\bin\Debug\net5.0\6Abstraction.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\bin\Debug\net5.0\ref\6Abstraction.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\bin\Debug\net5.0\6Abstraction.pdb
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\obj\Debug\net5.0\6Abstraction.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\obj\Debug\net5.0\ref\6Abstraction.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\obj\Debug\net5.0\6Abstraction.pdb
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\6Abstraction\obj\Debug\net5.0\6Abstraction.genruntimeconfig.cache

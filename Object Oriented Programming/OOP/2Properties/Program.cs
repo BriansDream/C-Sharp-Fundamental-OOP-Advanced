@@ -51,10 +51,32 @@ namespace _2Properties
 
             set
             {
-                if (value >= 12)
+                // if (value >= 12)
+                //     age = value;
+                // else
+                //     Console.WriteLine("Tidak boleh < 12");
+
+                // if (value > 12)
+                // {
+                //     age = value;
+                // }
+                // else
+                // {
+                //     throw new ArgumentOutOfRangeException("", "Age must be greater or equal to 11");
+                // }
+
+
+                // Error Handling using try catch
+                if (value > 12)
+                {
                     age = value;
-                else
-                    Console.WriteLine("Tidak boleh < 12");
+                }
+                // else
+                // {
+                //     throw new ArgumentOutOfRangeException("", "Age must be greater or equal ");
+                // }
+
+
 
             }
         }
@@ -78,8 +100,20 @@ namespace _2Properties
             // Console.WriteLine(person1.FIRSTNAME);
 
 
-            person1.AGE = 11;
-            Console.WriteLine(person1.AGE);
+            // person1.AGE = 0;
+            // Console.WriteLine(person1.AGE);
+            try
+            {
+                person1.AGE = 13;
+                Console.WriteLine("AGE {0}", person1.AGE);
+
+
+            }
+            catch (System.Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
         }
     }
 }

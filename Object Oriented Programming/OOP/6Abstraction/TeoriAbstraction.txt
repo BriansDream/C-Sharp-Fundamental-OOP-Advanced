@@ -1,0 +1,111 @@
+ABSTRACTION
+Digunakan untuk menyembunyikan detail implementasi dari sebuah objek.
+
+Didalam pemograman C# ABSTRACTION dapat dicapai menggunakan 
+abstract class and Interface
+
+// Interface
+merupakan koleksi dari deklarasi method dan property. 
+dan tidak memiliki implementasi dari method yang dideklarasikan tadi.
+
+Sebelumnya sudah mempunya Class bernama student, sekarang ingin menyimpan data fancy student tersebut dan kita buat INTERFACE dengan nama Iattendant, karena sesuai convensi / biasanya , nama untuk Interface harus selalu diawali dengan huruf I besar.
+
+Buat file baru bernama IAttendance.cs selevel dengan Program.cs
+
+namespace _6Abstraction
+{
+    public interface IAttendance
+    {
+
+    }
+}
+
+Tambahkan deklarasi untuk method ClockIn() dan ClockOut()
+  void ClockIn(int hour);
+    void ClockOut(int hour);
+
+    Seperti yang di lihat disini, interface hanya ber-isi deklarasi method atau signature'nya saja tanpa ada implementasinya dan bahkan tanpa perlu ada akses modifiernya (karena sudah pasti public secara default);
+
+    Implementasi Interface IAttendance wajib dibuat untuk kedua method.
+
+Coba Implmentasi Interface di class Student, dengan menambahkan kode berikut 
+ public class Student : Person, IAttendance
+ 
+ Disini akan terlihat error karena belum mengimplementasikan method yang ada di Interface di Attendance
+terlihat icon lampu bohlam, coba klik kemudian pilih implement interface, maka akan dibuatkan kedua method didalam interface tadi.
+
+    public void ClockIn(int hour)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ClockOut(int hour)
+        {
+            throw new NotImplementedException();
+        }
+
+
+Implementasi ulang karena compiler hanya akan melempar error jika method method dipanggil.
+
+Untuk itu tambahkan sbb :
+public void ClockIn(int hour)
+        {
+            // Jika datang diatas Jam 7, maka dia terlambat
+            if (hour > 7)
+            {
+                Console.WriteLine("You come late");
+
+            }
+            else
+            {
+                Console.WriteLine("You come on time");
+            }
+        }
+
+
+Sekarang buat kode di method main seperti ini 
+Student student1 = new Student();
+student1.ClockIn(20); => Gunakan method yang ada di Student Class
+
+Sampai disini telah berhasil membuat INTERFACE dan mengimplementasinya di class Student
+
+
+// =================================
+
+Buat class baru dengan nama Teacher, merupakan turunan dari class Person.
+Buat file baru selevel dengan file Program.cs, berinama Teacher.cs
+
+Buat default Constructor memanggil default Constructor dari class Person.
+
+Implementasikan interface IAttendance untuk class Teacher.
+Ubah implementasi interface tersebut copy dengan yg ada di class student.
+
+tambahkan using System untuk menghilangkan error di Console.WriteLine();
+
+Disini memiliki implementasi yang berbeda dari Interface di Attendance untuk Class STUDENT dan Class Teacher.
+
+Terlihat kita sudah memberikan argument yang sama untuk masing - masing method pada objek Student dan Teacher.
+
+Kita sudah berhasil membuat implementasi yang berbeda untuk masing - masing class yang sama - sama mengimplementasikan] interface di Attendance.
+
+// ==============================
+Selain Interface, abstract class dapat digunakan untuk membuat abstraction dalam OOP.
+
+Untuk membuat abstract class, cukup menambahkan keyword abstract pada deklarasi sebuah class.
+
+Contoh membuat class Person yang sudah ada menjadi abstract class dengan menambahkan keyword abstract.
+ // public abstract class Person{}
+
+Dengan menjadikan sebuah class menjadi abstract class, selain dapat memiliki method, field dan property class tersebut, juga bisa memiliki hanya deklarasi dari method seperti yang dimiliki oleh Interface atau yang biasa disebut abstract method.
+Seperti ini =>  public abstract void methodSignature();
+
+Yang perlu di ingat, untuk membuat abstract method, berikan akses modifier public untuk method tersebut.
+
+Selain itu sebuah abstract class tidak dapat di Instance atau dibuat objeknya dan karena kita telah mengubah class person menjadi abstract class, maka tak bisa lagi membuat objek dari class Person.
+
+Coba buat class Person di Main Program 
+var p1 = new Person() => Terlihat error tidak dapat membuat instance dari abstract class.
+
+Jangan lupa, karena ada abstract method di class Person, maka semua class turunan dari class Person ini harus mengimplementasikan method tersebut.
+
+JIka tidak mengimplementasikan methodSignature, maka Class Student dan Teacher akan Error.

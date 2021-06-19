@@ -1,0 +1,106 @@
+INHERINTANCE
+
+4 Prinsip di Object Oriented Programming
+    1. Inheritance
+    2. Abstraction
+    3. Encapsulations
+    4. Polymorphism
+
+Apa maksud dan fungsi dari prinsip - prinsip tersebut? Dan bagaimana cara menggunakannya?
+
+1. Inheritance
+Kemampuan sebuah class untuk menurunkan member (constructor, property, field, method) ke class lain.
+
+Pada latihan ini akan menggunakan class Person dan membuat class Student yang merupakan turunan dari class Person. (tidak perlu menulis ulang kode yg ada di class Person)
+
+Tetapi disini membuatnya pada file baru bernama Person.cs
+
+Buat Class Student yang merupakan turunan dari class Person 
+    - Buat file student.cs yang se-level dengan file person.cs
+
+Agar class Student menurunkan sifat - sifat dari class Person, bisa tambahkan kode 
+public class Student : Person {}
+
+Sekarang jika membuat object Student, maka bisa memanggil semua field dan method public milik class Person.
+
+EKSEKUSI / INSTANCE HARUS SELALU PADA METHOD MAIN 
+
+CLASS STUDENT memiliki kemampuan yang sama dengan CLASS PERSON, karena student merupakan turunannya.
+
+//===============
+CLASS Student tidak memiliki constructor yang menerima 2 argument
+Memang jika membuat turunan dari sebuah class, maka class turunannya secara default tidak akan memiliki constructor yang sama dengan baseclassnya.
+
+Untuk mengatasi hal itu, bisa membuat class cunstructor di kelas turunannnnya dan memanggil constructor dari baseclassnya menggunakan keyword base.
+public Student(string name) 
+: base(nama)
+{}
+
+Sekarang sudah tidak terjadi error lagi di deklarasi OBJ 2
+Namun error terjadi di Deklarasi OBJ 1
+
+Untuk mengatasinya buat default constructor untuk class Student yang akan memanggil default constructor class Person.
+
+Apakah bisa mengakses private member di base class?
+Buat private field di class Person dengan nama FullName bertipe String.
+
+Field fullname hanya akan di inisialisasi di Constructor seperti ini,
+fullName = $"{firstName} {lastName}";
+
+Untuk menginisialisasi field fullName ini, gunakan fitur String Interpolation.
+yang mirip dengan string formatting, namun bedanya kita bisa langsung memasukkan nama fieldnya ke dalam placeholder
+
+String formatting => Console.Write("Hai {0}", namaVariable);
+String Interpolation => $"{namaVariable} {namavaraible2}";
+
+Sekarang coba akses field FullName ini dari class STUDENT
+  public string getFullname()
+        {
+            return $"{base.fullName}"; -> Error karena field fullname tidak dapat diakses
+        }
+
+Untuk mengatasi field Fullname agar dapat diakses, kita bisa mengubah akses modifier di field fullName tadi menjadi protected.
+
+Dengan mengubah akses modifier menjadi protected. field fullName tidak hanya dapat diakses oleh class itu sendiri, namun juga bisa diakses oleh class turunannya.
+
+Coba panggil method getFullname() dari main program.
+
+
+//========================
+VIRTUAL METHOD
+adalah sebuah method yang memiliki implementasi di base class, namun implementasinya dapat diulang di class turunannya.
+
+Buat VIRTUAL METHOD dengan nama Introduce di class PERSON dengan menggunakan Keyword Virtual seperti ini.
+
+public virtual string Introduce() {
+     return $"Hi, I'm a Person, and my name is {fullName}";
+}
+
+Lalu, panggil method ini di main Method.
+
+SEKARANG. 
+Implementasi ulang virtual method introduce tadi dari clas STUDENT menggunakan keyword override seperti ini.
+public override string Introduce(){
+    return $"Hi, i'm a student, and my name is {base.fullName}"
+}
+
+Maka sekarang yang dipanggil adalah method Introduce dari CLASS STUDENT
+
+// ====
+SELAIN UNTUK METHOD, KEYWORD VIRTUAL 
+juga bisa diaplikasikan disebuah property
+
+Akan mengubah Property Age menjadi virtual, sehingga kita akan batasi umur dari seorang student hanya boleh diantara 6 dan 17 tahun.
+
+Tambahkan keyword VIRTUAL di property age di class person, dan ubah akses modifier field age manjadi protected.
+
+override implementasi dari property age dari class STUDENT.
+Muncul error di ArgumentOutOfRangeException => Tambahkan using System pada baris paling atas.
+
+
+Buat kode di Main Method()
+var p1 = new Person();
+var s1 = new Student();
+
+ubah nilai agenya menjadi > 17 = error karena nilainya > 17
+Dengan begitu kita berhasil mengoverride property age di class Student.

@@ -1,0 +1,16 @@
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\obj\Debug\net5.0\5Inheritance.csproj.AssemblyReference.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\obj\Debug\net5.0\5Inheritance.GeneratedMSBuildEditorConfig.editorconfig
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\obj\Debug\net5.0\5Inheritance.AssemblyInfoInputs.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\obj\Debug\net5.0\5Inheritance.AssemblyInfo.cs
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\obj\Debug\net5.0\5Inheritance.csproj.CoreCompileInputs.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\bin\Debug\net5.0\5Inheritance.exe
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\bin\Debug\net5.0\5Inheritance.deps.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\bin\Debug\net5.0\5Inheritance.runtimeconfig.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\bin\Debug\net5.0\5Inheritance.runtimeconfig.dev.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\bin\Debug\net5.0\5Inheritance.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\bin\Debug\net5.0\ref\5Inheritance.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\bin\Debug\net5.0\5Inheritance.pdb
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\obj\Debug\net5.0\5Inheritance.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\obj\Debug\net5.0\ref\5Inheritance.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\obj\Debug\net5.0\5Inheritance.pdb
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\5Inheritance\obj\Debug\net5.0\5Inheritance.genruntimeconfig.cache
