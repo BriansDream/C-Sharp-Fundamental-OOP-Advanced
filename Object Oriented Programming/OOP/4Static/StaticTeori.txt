@@ -1,0 +1,52 @@
+STATIC
+Keyword Static berfungsi membuat member dari sebuah class dapat diakses tanpa perlu membuat instance dari class tersebut.
+
+
+Agar lebih paham, maka buat field baru dengan nama totalPerson bertipe integer,
+field ini akan ditambahkan satu setiap objek dari class person dibuat.
+- public int totalPerson;
+
+So, field ini akan menyimpan total dari objek class person yang ada, 
+
+Sekarang setiap membuat instance class akan ditambahkan 1 untuk nilai dari field totalPerson ini.
+
+Tambahkan keyword static saat deklarasi field totalPerson.
+    public static int totalPerson;
+
+Karena sudah menjadi field static maka cara mengaksesnya juga berbeda.
+NamaClass.namaFieldStatic
+
+Maka field totalPerson selalu bertambah setelah kita membuat objek dari class Person
+
+Agar tidak mengulang - ulang code untuk menambah nilai di field totalPerson, kita bisa pindahkan kodenya kedalam class Constructor.
+  totalPerson++;
+
+Untuk menambah class yang static kita tak bisa menambahkan keyword THIS
+
+karena Keyword THIS hanya untuk mengakses member dari instance CLASS.
+
+// ========
+Membuat ID number yang berbeda - beda untuk tiap - tiap objek Person dan nilainya mengikat serta tak bisa dirubah, kita bisa buat field dan property dengan nama ID dengan tipe Integer.
+
+pada COnstructor inisialisasi nilai dari field ID yang diambil dari total Person
+
+
+Jika diperhatikan nilai dari field ID ini dapat diubah dari dalam class Person, sementara kita ingin ID dari tiap class bersifat unik dan tidak dapat diubah.
+
+untuk mengatasinya kita bisa menerapkan keyword read-only ke field id.
+private readonly int id;
+
+Sekarang terlihat ada error ketika kita mencoba meng-set field id didalam property.
+Ini karena keyword ready-only akan membuat sebuah field hanya dapat di inisialisasi 1x dan tidak dapat diubah lagi nilainya setelah di inisialisasi.
+
+Ini mirip dengan KONSTANTA yang pernah kita bahas di video sebelumnya.
+Bedanya field dengan keyword readonly, dapat juga di inisialisasi saat runtime atau pada contoh ini dari dalam constructor.
+
+//=====
+
+Sekarang buang aksesor set di property ID, dan field ID tidak akan bisa diubah nilainya setelah object person dibuat.
+
+Keyword STATIC dapat diterapkan pada method didalam class.
+Static keyword yang diterapkan pada method hanya dapat mengakses member static.
+
+Demikian pula jika memberikan keyword static pada sebuah class, maka seluruh member dari class tersebut harus menerapkan keyword static juga.

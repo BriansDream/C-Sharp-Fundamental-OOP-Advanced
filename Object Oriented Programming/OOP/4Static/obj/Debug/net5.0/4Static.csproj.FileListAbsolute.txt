@@ -1,0 +1,16 @@
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\bin\Debug\net5.0\4Static.exe
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\bin\Debug\net5.0\4Static.deps.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\bin\Debug\net5.0\4Static.runtimeconfig.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\bin\Debug\net5.0\4Static.runtimeconfig.dev.json
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\bin\Debug\net5.0\4Static.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\bin\Debug\net5.0\ref\4Static.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\bin\Debug\net5.0\4Static.pdb
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\obj\Debug\net5.0\4Static.csproj.AssemblyReference.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\obj\Debug\net5.0\4Static.GeneratedMSBuildEditorConfig.editorconfig
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\obj\Debug\net5.0\4Static.AssemblyInfoInputs.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\obj\Debug\net5.0\4Static.AssemblyInfo.cs
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\obj\Debug\net5.0\4Static.csproj.CoreCompileInputs.cache
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\obj\Debug\net5.0\4Static.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\obj\Debug\net5.0\ref\4Static.dll
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\obj\Debug\net5.0\4Static.pdb
+E:\C-Sharp-Basic-and-OOP\Object Oriented Programming\OOP\4Static\obj\Debug\net5.0\4Static.genruntimeconfig.cache
