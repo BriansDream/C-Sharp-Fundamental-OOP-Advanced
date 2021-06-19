@@ -1,0 +1,32 @@
+// ENCAPSULATION
+
+Kembalikan class Person menjadi non-abstract
+
+Encapsulation
+Kemampuan class untuk meyembunyikan attribut dan behaviour yang tidak perlu diketahui.
+
+Dengan katalain, Encapsulation ini membatasi akses ke field, property, dan method pada sebuah class.
+
+Ada 5 Akses Modifier untuk Implementasi Encapsulation dalam C#.
+1. Public
+2. Private
+3. Protected
+4. Internal 
+5. Protected Internal
+
+Pada materi sebelumnya sebenarnya, sudah pernah mengimplementasi encapsulation di code yang kita buat.
+
+Contohnya di class Person pada method yang memiliki akses modifier public.
+
+Public = dapat diakses dari sebuah objek person.
+
+field ID memiliki akses modifier private, maka tidak bisa diakses oleh objek Person.
+
+Juga punya field Age dengan akses modifier protected, 
+- Akses modifier protected menyembunyikan field dari sebuah object class namun tetap dapat diakses oleh class turunannya.
+
+Selain ketiga akses modifier tersebut, ada juga akses modifier internal dan protected internal yang akan menyembunyikan data didalam sebuah file assembly.
+
+FILE ASSEMBLY 
+adalah output file yang dihasilkan saat kode C# dicompile.
+Contohnya exe.file atau library file.
