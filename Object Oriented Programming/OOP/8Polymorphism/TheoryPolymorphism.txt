@@ -1,0 +1,91 @@
+// POLYMORPHISM
+Kemampuan suatu objek untuk bertindak sebagai objek lain.
+
+Polymorphism terjadi ketika user memiliki beberapa class yang terhubung satu sama lain melalui Inheritance.
+
+Pada materi sebelumnya, sudah memiliki base class yang bernama Person dan 2 class turunan dari Person yaitu Teacher and Student.
+
+Kita bisa membuat objek dari class student dengan cara seperti ini 
+Student firstStudent = new Student("Andesta","Nainggolan");
+
+atau dengan adanya POLYMORPHISM, kita bisa juga membuat sebuah objek STUDENT dengan cara seperti ini 
+Person secondStudent = new Student("Andesta","Dirgantara"); 
+
+Contoh diatas, membuat objek Student dengan tipe data person, hal ini bisa terjadi karena class Student merupakan turunan dari class Person.
+
+Sehingga dengan kata lain, sebuah objek student dapat menjadi objek bertipe person.
+
+Sekarang Coba panggil method getFullname yang ada di class Student.
+
+firstStudent.getFullname();
+
+// Namun untuk objek secondStudent, karena dia bertipe Person, maka dia tidak memiliki method getFullname()
+Hal ini terjadi karena kita tak bisa mengeksekusi spesifik method yang ada di class turunannya.
+
+Namun jika terdapat virtual method dalam base class dan di Implementasikan pada class turunan, maka yang akan tereksekusi adalah implementasi pada class turunan.
+Console.WriteLine(firstStudent.Introduce());
+Console.WriteLine(secondStudent.Introduce());
+
+Terlihat kedua method tersebut mengeksekusi method Introduce yang ada di class Student, walaupun sebenarnya secondStudent bertipe Person.
+
+Dengan Polymorphism kita juga dapat membuat array bertipe Person namun berisi objek dengan tipe Person, Student dan Teacher.
+
+
+Contoh : var personCollection = new Person[3]; => Lalu isi variable personCollection ini dengan objek student yang telah kita buat tadi.
+
+personCollection[0] = firstStudent;
+personCollection[1] = secondStudent;
+
+Dan Karena class teacher merupakan turunan dari class Person, maka dapat membuat objek Teacher dan memasukkannya ke variable personCollection.
+
+Person firstTeacher = new Teacher();
+personCollection[2] = firstTeacher;
+
+Di class person memiliki method Greetings yang menerima argument bertipe person.
+Dengan Polymorphism juga bisa memberikan input dengan tipe Student dan Teacher. untuk method ini.
+
+Contoh : firstStudent.Greetings(firstTeacher);
+firstTeacher.Greetings(secondStudent);
+
+Dapat dilihat bisa memberikan argument bertipe Teacher maupun Student untuk method Greetings tadi.
+
+//===
+Sekarang bagaimana caranya, jika kita  ingin mengakses method yang hanya ada di class turunannya?
+Seperti yang sudah dibahas sebelumnya, kita tak bisa mengakses method getFullname() dari objek secondstudent karena method ini hanya ada di Class Student, sementara Objek second Student bertipe Person.
+
+Namun kita bisa mengatasinya dengan cara meng-casting terlebih dahulu objek secondStudent itu ke Tipe Student seperti ini :
+
+var tempStudent = (Student)secondStudent; => Now, sudah bisa akses method getFullname() dari variable temporary ini.
+
+tempStudent.getFullname();
+
+atau kita bisa mengcasting element array di variable personCollection dan memanggil method getFullname() seperti ini :
+var tempStudent2 = (Student)personCollection[1];
+tempStudent2.getFullname();
+
+Sekarang misalnya variable collection ini berisi banyak element, katakanlah hingga ribuan, maka akan susah kalau kita menggunakan cara seperti ini.
+
+Untuk itu bisa gunakan iterasi untuk memastikan element tersebut bertipe Student dengan cara seperti ini 
+
+
+foreach(var person in personCollection) {
+    // Kode ini untuk mengecek apakah tipe datanya adalah student 
+    if (person.GetType().Name=="Student") {
+        // Kode ini untuk mengubah dari tipe data person ke student
+        var temp = (Student)person;
+        Console.WriteLine(temp.getFullname());
+    }
+}
+
+Ketika dijalankan maka hanya object firstStudent dan secondStudent yang memanggil method getFullname()
+
+Dalam C# ada keyword is dan as untuk membuat kode menjadi lebih simple dengan kedua keyword tersebut.
+
+Saat kita mengecek tipe datanya, kita bisa menggunakan keyword IS 
+if(person is Student)
+
+Dan untuk mengcasting objek person ke student, kita bisa menggunakan keyword AS seperti ini : var temp = person as Student;
+
+Coba jalankan, maka hasilnya tetap sama.
+
+NEXT => ADVANCED C# YANG MEMBAHAS FITUR - FITUR C# UNTUK PEMBUATAN APLIKASI DEKSTOP
