@@ -1,0 +1,16 @@
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\bin\Debug\net5.0\1Generics.exe
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\bin\Debug\net5.0\1Generics.deps.json
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\bin\Debug\net5.0\1Generics.runtimeconfig.json
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\bin\Debug\net5.0\1Generics.runtimeconfig.dev.json
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\bin\Debug\net5.0\1Generics.dll
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\bin\Debug\net5.0\ref\1Generics.dll
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\bin\Debug\net5.0\1Generics.pdb
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\obj\Debug\net5.0\1Generics.csproj.AssemblyReference.cache
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\obj\Debug\net5.0\1Generics.GeneratedMSBuildEditorConfig.editorconfig
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\obj\Debug\net5.0\1Generics.AssemblyInfoInputs.cache
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\obj\Debug\net5.0\1Generics.AssemblyInfo.cs
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\obj\Debug\net5.0\1Generics.csproj.CoreCompileInputs.cache
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\obj\Debug\net5.0\1Generics.dll
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\obj\Debug\net5.0\ref\1Generics.dll
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\obj\Debug\net5.0\1Generics.pdb
+E:\C-Sharp-Basic-and-OOP\Advanced C#\1Generics\obj\Debug\net5.0\1Generics.genruntimeconfig.cache

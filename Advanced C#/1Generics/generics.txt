@@ -1,0 +1,79 @@
+ADVANCED C#
+Topik ini dibagi menjadi 2 bagian 
+1. Fitur - fitur di C#
+2. Windows Presentation Foundation (WPF)
+
+// Fitur - fitur C#
+1. Generics
+2. Delegates
+3. Lambda Expressions
+4. Events
+
+//=====
+GENERICS
+Fitur Generics digunakan untuk mendefinisikan class dengan sebuah placeholder, untuk menentukan tipe data member class tersebut pada saat runtime.
+
+Buat Class baru dengan nama Math.
+Kemudian buat sebuah method untuk mencari nilai makximum dari 2 buah integer.
+
+Next, Pada main program buat objek dari class ini dan memanggil methodnya.
+
+Bagaimana untuk cek nilai maximum dari 2 bilangan double?
+Tulis kode berikut
+var m2 = new Math();
+m2.Max(10.3,43.2); => Compiler tidak dapat mengkonversi argument bertipe Doubleke tipe Int.
+
+
+Bisa saja membuat class baru yang memiliki method untuk menerima parameter bertipe double, tetapi ini akan menjadi sulit jika kita juga ingin memanipulasi banyak tipe data lainnya.
+
+Untuk mengatasi hal ini, jadikan class MATH menjadi GENERIC CLASS untuk memanipulasi tipe data lain.
+
+Untuk membuat GENERIC class bisa tambahkan placeholder seperti ini : <T>
+public class Maths<T>
+
+huruf <T> dalam kurung siku ini merupakan placeholder dari tipe data yang akan ditentukan pada saat runtime.
+
+Karena GENERIC mengadopsi fitur template bahasa pemograman C++, maka konvensi/kebiasaannya untuk nama placeholdernya adalah T, tetapi kita bisa gunakan huruf apapun untuk placeholdernya.
+
+Sekarang ganti semua tipe data di signature method MAX dengan T seperti ini 
+public T Max(T x , T y) {
+
+} => Akan muncul error karena compiler saat ini tidak tau tipe data T yang akan diberikan pada saat runtime nanti.
+
+UNtuk mengatasinya, kita bisa tentukan constraint untuk class GENERIC kita.
+Tambahkan kode untuk membuat constraint pada tipe data yang hanya bisa dikomparasi.
+ public class Math<T> where T : IComparable
+
+ Next, ubah statement dalam method MAX menjadi seperti ini 
+ return x.CompareTo(y) > 0? x : y;
+
+
+
+Sekarang telihat error pada saat membuat Object dari class MATH menjadi class GENERIC.
+Untuk mengatasinya bisa menambahkan tipe data di placeholdernya saat kita membuat Objek MATH seperti ini 
+
+var m = MATH<int>()
+var m = MATH<double>()
+Kita dapat mencari nilai maximum untuk argument yang berbeda - beda tipe datanya hanya dengan membuat 1 definisi class generic
+
+// == 
+Satu definisi class generics bisa mencari nilai maximum untuk argument yang tipe datanya berbeda - beda.
+
+Dalam bahasa pemgoraman C# sudah tersedia banyak kumpulan generic class .
+Coba ketikkan : System.Collection.Generic.
+
+Disini sudah tersedia banyak macam - macam class generics untuk menyimpan data antara lain List, Queue, stack dan lain - lain.
+
+Kita akan coba membuat list.
+var list = System.Collections.Generic.List<int>();
+
+Sekarang bisa menambahkan data ke List ini dengan method Add.
+seperti ini : list.Add(45);
+
+Coba panggil method contains didalam class ini.
+Contohnya seperti ini  : var isContain = list.Contains(55);
+
+// ===
+
+Buka implementasi method contains dengan menekan CTRL+LEFT.
+Ini mirip seperti method MAX yang kita buat di class MATH tadi, dimana tipe data parameternya di isi oleh placeholder T
