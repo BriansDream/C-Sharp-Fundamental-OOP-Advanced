@@ -1,0 +1,2 @@
+// LAMBDA EXPRESSION
+merupakan anonymous method yang tidak memiliki access modifier, nama method dan return statement

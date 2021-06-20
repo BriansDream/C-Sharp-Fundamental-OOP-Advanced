@@ -1,0 +1,67 @@
+// DELEGATES
+
+Delegates digunakan sebagai reference ke / atas suatu function.
+
+Buat class Calculator, berisi 2 buah function Addition and Subtraction.
+
+Untuk menggunakan function di class Calculator ini, bisa gunakan cara yang pernah kita pelajari di video sebelumnya.
+
+var calc = new Calculator();
+calc.Addition(20,10)
+
+// ===
+
+Gunakan Delegates untuk memanggil function Addition and Subtraction.
+
+Caranya buat dulu deklarasi delegates yang sesuai dari signature function Addition dan Subtraction.
+dibawah class program
+ public delegate void CalculateDelegate(int a, int b);
+
+Contoh diatas, kita membuat Delegate dengan nama CalculateDelegate yang menerima inputan 2 argument bertipe data Integer.
+
+Sekarang bisa mendefinisikan delegate tadi supaya me-refer ke function yang kita punya di class Calculator. Caranya : 
+
+CalculateDelegate calcDelegate = calc.Addition;
+calcDelegate(20,10);
+
+Hapus pemanggilan function dari objek Calculator.
+
+//== 
+Bisa juga menambahkan agar Delegate tadi me-refer ke lebih dari 1 function. Caranya : 
+calcDelegate += calc.Subtraction;
+
+Dengan delegate, kita juga bisa menambahkan function dari berbagai class, Selama signature sesuai dengan yang dimiliki, maka function dari berbagai class dapat ditambahkan.
+
+Contoh, buat definisi function baru didalam class Program 
+
+ public static void Multiplication(int x, int y)
+        {
+            Console.WriteLine($"{x} * {y} = {x * y}");
+        }
+
+Bisa tambahkan function ini kedalam delegate 
+ calcDelegate += Multiplication;
+
+
+ Dalam C# sudah tersedia built-in untuk deklarasi delegate yaitu Action dan Func.
+
+ Delegate Action dapat melakukan refer function yang menerima hingga 16 argumen, TANPA RETURN VALUE.
+
+ Func dapat melakukan refer function yang menerima hingga 16 argument, dengan return value.
+
+ //===
+
+ Dengan built in Delegate tadi, maka tak perlu mendeklarasikan sebuah delegate.
+
+ Kita bisa ubah codenya menggunakan Delegate Action menjadi seperti ini 
+ Action<int,int> calcDelegate = calc.Addition;
+
+ Kemudian bisa hapus code diatasnya : CalculateDelegate calcDelegate = calculation.Addition;
+
+ Dan juga tidak perlu lagi memiliki deklarasi ini :
+  public delegate void CalculateDelegate(int a, int b);
+
+  // ===
+  Next Lambda Expression
+
+  
