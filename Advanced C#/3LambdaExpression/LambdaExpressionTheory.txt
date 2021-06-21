@@ -1,2 +1,90 @@
 // LAMBDA EXPRESSION
-merupakan anonymous method yang tidak memiliki access modifier, nama method dan return statement
+merupakan anonymous method yang tidak memiliki access modifier, nama method dan return statement.
+
+Lambda Expressions digunakan agar kode yang ditulis lebih sedikit dan simple.
+
+
+Misalnya kita ingin membuat function yang menerima 1 argument dan mengembalikan return value. 
+Seperti ini : 
+  static int Square(int x)
+        {
+            return x * x;
+        }
+
+// ===
+Cara menggunakan LAMBDA EXPRESSION
+
+args => expressions (argument, lambda operator, expression)
+
+Untuk method square lambda expressionnya akan menjadi seperti ini :
+x => x*x 
+
+Dimana x adalah argumentnya sedangkan expressionnya x*x
+
+Seperti yang kita bahas sebelumnya, kita dapat menggunakan Delegate untuk merefer ke lebih dari 1 function.
+
+Kita akan gunakan Built in delegate yaitu FUNC.
+Yang menerima 1 argument untuk me-refer ke function SQUARE.
+Func<int,int> square = Square;
+
+Kemudian panggil delegatenya 
+Console.WriteLine(square(10));
+
+Sederhanakan kodenya dengan lambda expression :
+ Func<int, int> square = x => x * x;
+
+Sekarang kita sudah tidak membutuhkan function Square lagi karena sudah diganti dengan LAMBDA EXPRESSION
+
+//===
+
+Jika ingin membuat Lambda Expression yang lebih dari 1, maka bisa gunakan kurung buka dan kurung tutup untuk argumentnya 
+(x,y,z) => ...
+
+Misalnya ingin menghitung Luas persegi panjang dengan 2 Inputan Integer, bisa gunakan kode ini :
+Func<int,int,int> rectangle=(x,y) => x*y;
+
+Cara memanggilnya
+rectangle(2,2);
+
+//====
+
+Implementasikan lambda expressions pada contoh lain :
+Buat class baru bernama Person, simple berisi 1 constructor dan 2 property yaitu : name and age.
+
+Buat beberapa objek dari class person ini dan masukkan ke dalam List :
+   var person1 = new List<Person>();
+
+   Jangan lupa tambahkan using System.Collections.Generic;
+   person1.Add(new Person("Wisnu", 17));
+
+   Sekarang panggil method FindAll yang ada di Objek List.
+   Method FindAll ini akan mencari semua objek yang nilainya sesuai dengan Predicate yang diberikan.
+
+   Predicate adalah Delegate yang me-refer ke sebuah method yang menerima satu argumen dan mengembalikan nilainya dengan tipe data boolean.
+
+   Buat Method untuk predicatenya terlebih dahulu seperti ini : 
+public static bool isBelowTwenty(Person person)
+{
+  // Mencari data person yang umurnya dibawah 20 tahun 
+ return person.Age < 20;
+}
+
+/==
+Lengkapi method FindAll dengan memberi method isBelowTwenty ke Predicate'nya, seperti ini : 
+person1.FindAll(isBelowTwenty);
+
+Lakukan iterasi untuk melihat element apa saja yang ada di variable belowTwenty :
+  foreach (var item in belowTwenty)
+            {
+                Console.WriteLine(item.Name);
+            }
+
+
+Sekarang bisa sederhanakan kodenya menggunakan Lambda Expression menjadi seperti ini :
+var belowTwenty = person.FindAll(person => person.Age < 20);
+
+Dan kita bisa membuang method isBelowTwenty, karena sudah tidak digunakan lagi.
+
+Dan menurut konvensi, bisa menggunakan 1 huruf saja di LAMBDA EXPRESSION agar menjadi lebih simple penulisannya 
+seperti ini  : 
+ var belowTwenty = person1.FindAll(p => p.Age < 20);

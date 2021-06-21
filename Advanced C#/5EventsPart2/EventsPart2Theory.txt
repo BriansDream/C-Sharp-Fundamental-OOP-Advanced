@@ -1,0 +1,64 @@
+// EVENTS PART 2
+
+Pada video sebelumnya, telah berhasil mem-publish Event dan Men-subscribe Event, 
+
+Namun jika kita lihat Class Program tidak memiliki hubungan apapun dengan class BankAccount, sehingga saat menampilkan pesan ke user kita tidak bisa menampilkan berapa sebenarnya sisa saldo user saat ini dan berapa besar uang yang ingin diambil oleh user.
+
+Oleh karena itu Microsoft merekomendasikan agar semua Events menyediakan 2 parameter, 
+
+Parameter 1 = Objek yang mempublish Eventnya.
+Parameter 2 = Argument - argument yang relevan terhadap event itu.
+
+Dalam Contoh ini, argument itu bisa jadi adalah sisa saldo terkini dan total Debitnya, dan parameter yang kedua ini haruslah turunan dari Class EventArgs.
+
+Buat Class OverdrawnEventArgs yang merupakan turunan dari class EventArgs.
+   public class OverdrawnEventArgs : EventArgs
+
+
+Kemudian buat 2 field yaitu CurrentBalance dan DebitAmount.
+    public decimal CurrentBalance, DebitAmount;
+
+Serta buat 1 Constructor untuk meng-inisiasi nilai kedua field itu.
+
+        public OverdrawnEventArgs(decimal CurrentBalance, decimal DebitAmount)
+        {
+            CurrentBalance = CurrentBalance;
+            DebitAmount = DebitAmount;
+        }
+
+
+//===
+
+Sekarang sudah memiliki sebuah class yang merupakan turunan dari class EventArgs.
+
+Bisa ubah deklarasi event di class BankAccount agar menerima 2 argument dengan cara, ganti delegate action menjadi Eventhandler (tipe bawaan dari C#). 
+
+ public event EventHandler<OverdrawnEventArgs> Overdrawn;
+
+
+Dengan mengubah deklarasi event ini, kita juga harus mengubah cara mempublish event ini dengan memberi 2 Argument.
+
+                if (Overdrawn != null)
+                {
+                    Overdrawn(this, new OverdrawnEventArgs(Balance, amount));
+                }
+
+Kita juga perlu mengubah method OverdrawnHandler di kelas Main agar menerima 2 Argument.
+
+  public static void OverdrawnHandler(object sender, OverdrawnEventArgs args)
+        {
+
+Sekarang kita bisa memperjelas informasi di method ini karena telah menerima inputan argument berupa objek yang mempublish event dan nilai Balance dan Amount dari argument OverdrawnEventArgs
+
+
+Terlihat sekarang Informasi menjadi lebih jelas karena event memberikan informasi yang jelas juga melalui argument yang dikirimkan
+
+// == 
+Demikian pembahasan fitur - fitur di C# mulai dari 
+- Generics
+- Delegate
+- Lambda Expression
+- Events
+
+
+Next mempelajari pembuatan Dekstop App menggunakan Teknologi Windows Presentasion Foundation.

@@ -1,0 +1,16 @@
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\bin\Debug\net5.0\3LambdaExpression.exe
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\bin\Debug\net5.0\3LambdaExpression.deps.json
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\bin\Debug\net5.0\3LambdaExpression.runtimeconfig.json
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\bin\Debug\net5.0\3LambdaExpression.runtimeconfig.dev.json
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\bin\Debug\net5.0\3LambdaExpression.dll
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\bin\Debug\net5.0\ref\3LambdaExpression.dll
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\bin\Debug\net5.0\3LambdaExpression.pdb
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\obj\Debug\net5.0\3LambdaExpression.csproj.AssemblyReference.cache
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\obj\Debug\net5.0\3LambdaExpression.GeneratedMSBuildEditorConfig.editorconfig
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\obj\Debug\net5.0\3LambdaExpression.AssemblyInfoInputs.cache
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\obj\Debug\net5.0\3LambdaExpression.AssemblyInfo.cs
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\obj\Debug\net5.0\3LambdaExpression.csproj.CoreCompileInputs.cache
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\obj\Debug\net5.0\3LambdaExpression.dll
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\obj\Debug\net5.0\ref\3LambdaExpression.dll
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\obj\Debug\net5.0\3LambdaExpression.pdb
+E:\C-Sharp-Basic-and-OOP\Advanced C#\3LambdaExpression\obj\Debug\net5.0\3LambdaExpression.genruntimeconfig.cache

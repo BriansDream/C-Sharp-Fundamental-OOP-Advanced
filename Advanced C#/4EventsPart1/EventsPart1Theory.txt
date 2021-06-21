@@ -1,0 +1,73 @@
+EVENTS (PART1)
+
+Events digunakan untuk komunikasi antar objek dalam program.
+
+Buat class baru dengan nama BankAccount, lalu buat Property dengan nama Balance(menyimpan saldo) serta 2 method yaitu Debit dan Credit (untuk menambah atau mengurangi total saldo).
+
+Bisa coba buat Objek dari class BankAccount ini dan menginisiasi nilai Balance seperti ini : 
+ var account = new BankAccount();
+            account.Balance = 1000;
+
+Cek saldonya :   Console.WriteLine(account.Balance);
+
+Sekarang bisa menambahkan / mengurangi saldo seperti ini : 
+account.Credit(2000);
+account.Debit(500);
+
+/==
+Dalam contoh sehari - hari mesin ATM pasti menolak jika kita mengambil Uang melebihi saldo yang kita punya.
+
+Dalam class BankAccount, kita dapat menerbitkan EVENT saat akan mengurangi saldo lebih dari sisa saldo.
+
+Sebelum membuat Objek yang dapat menerbitkan sebuah event, deklarasikan terlebih dahulu nama Event tersebut.
+
+public delegate void OverdrawnEventhandler();
+public event OverdrawnEventhandler Overdrawn;
+
+Untuk deklarasi sebuah Event, kita bisa tentukan 
+=> Akses modifier, Keyword Event, Delegate untuk menentukan signature dari method yang akan dijalankan sistem ... event tersebut, namaEventnya;
+
+Sekarang bisa publish sebuah Event ketika saldo tidak cukup saat user mengurangi Balance :
+   public void Debit(decimal amount)
+        {
+            if (Balance >= amount)
+            {
+                Balance -= amount;
+            }
+            else
+            {
+                if (Overdrawn != null)
+                {
+                    Overdrawn();
+                }
+            }
+        }
+
+//==
+Sekarang mungkin muncul pertanyaan, mengapa tidak diberikan Error Exception saja seperti pembahasan di video - video sebelumnya ?
+
+Karena dengan mem-publish Event, class lain akan diberikan pilihan untuk membuat objek dari class BankAccount.
+
+Apakah ingin melakukan sesuatu saat terjadi Event? atau tidak melakukan apa - apa sama sekali? 
+
+
+Kita bisa Subscribe ke event yang ada pada class BankAccount.Subscr untuk menampilkan pesan ke user.
+
+Buat Method Signaturenya sesuai dengan delegate yang dipakai oleh event Overdrawn di class Bank Account.
+
+Yaitu tanpa argument dan tanpa return value.
+
+  public static void OverdrawnEventHandler()
+        {
+            Console.WriteLine("The Account is Overdrawn");
+        }
+
+Sekarang kita bisa subscribe eventnya tepat setelah deklarasi objek Bank Account seperti ini :
+  account.Overdrawn += OverdrawnEventHandler;
+
+  ketika dijalankan, maka terlihat pesan yang dihasilkan karena kita berhasil mensubscribe eventnya.
+
+  Seperti yang pernah dibahas di video sebelumnya, bahwa di C# ada Built in Delegate yaitu ACTION dan FUNC.
+
+  Karena Delegate OverdrawnEventHandler tidak menerima argument dan tidak memiliki return value, maka dapat diganti dengan built-in delegate Action.
+   public event Action Overdrawn;

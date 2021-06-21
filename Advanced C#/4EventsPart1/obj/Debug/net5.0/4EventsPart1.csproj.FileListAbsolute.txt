@@ -1,0 +1,16 @@
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\obj\Debug\net5.0\4EventsPart1.csproj.AssemblyReference.cache
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\obj\Debug\net5.0\4EventsPart1.GeneratedMSBuildEditorConfig.editorconfig
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\obj\Debug\net5.0\4EventsPart1.AssemblyInfoInputs.cache
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\obj\Debug\net5.0\4EventsPart1.AssemblyInfo.cs
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\obj\Debug\net5.0\4EventsPart1.csproj.CoreCompileInputs.cache
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\bin\Debug\net5.0\4EventsPart1.exe
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\bin\Debug\net5.0\4EventsPart1.deps.json
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\bin\Debug\net5.0\4EventsPart1.runtimeconfig.json
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\bin\Debug\net5.0\4EventsPart1.runtimeconfig.dev.json
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\bin\Debug\net5.0\4EventsPart1.dll
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\bin\Debug\net5.0\ref\4EventsPart1.dll
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\bin\Debug\net5.0\4EventsPart1.pdb
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\obj\Debug\net5.0\4EventsPart1.dll
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\obj\Debug\net5.0\ref\4EventsPart1.dll
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\obj\Debug\net5.0\4EventsPart1.pdb
+E:\C-Sharp-Basic-and-OOP\Advanced C#\4EventsPart1\obj\Debug\net5.0\4EventsPart1.genruntimeconfig.cache
